@@ -229,7 +229,7 @@ h3 {
 /* End of section about styling */
 
 #projects {
-  height: 50vh;
+  height: 1350px;
 }
 
 .project-cards {
@@ -241,7 +241,7 @@ h3 {
 .project {
   background-color: #353538;
   width: 300px;
-  height: 400px;
+  height: 370px;
   margin: 10px;
   border-radius: 10px;
   cursor: pointer;
@@ -266,7 +266,7 @@ h3 {
   transition: 1s;
 }
 
-.projects .container .content p {
+.projects .container .content .projects-title {
   padding: 20px 0px;
   font-size: 1.3rem;
   font-weight: 700;
@@ -277,16 +277,27 @@ h4 {
   font-size: 1.2em;
   padding-top: 20px;
   padding-bottom: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .projects .container .content .project-describe {
-  font-size: 0.8rem;
+  font-size: 1rem;
   color: rgb(237, 237, 237);
-  padding: 20px 0px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
+
+/* End of section about styling */
+
+#contact {
+  height: 500px;
+}
+.contact .container .content .contact-title {
+  padding: 20px 0px;
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+/* Section contact styling */
+
+/*End of section contact styling */
+
+/* Footer styling */
+
+/*End of footer styling */

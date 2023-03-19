@@ -10,7 +10,7 @@ hamburger.onclick = function () {
 // Script for h3
 const typed = new Typed('.pinput', {
   strings: ['Frontend Developer', 'Freelancer', 'Programist in Your Company'],
-  typeSpeed: 200,
-  backSpeed: 150,
+  typeSpeed: 220,
+  backSpeed: 170,
   loop: true,
 });
