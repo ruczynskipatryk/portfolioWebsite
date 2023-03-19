@@ -1,0 +1,292 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  font-family: Arial;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: rgb(237, 237, 237);
+}
+
+/* Navbar styling */
+
+nav {
+  width: 100%;
+  height: 80px;
+  background: #353538;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 100px;
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: bold;
+  color: #cecece;
+  left: 0;
+}
+
+.hamburger {
+  display: none;
+}
+
+.nav-bar ul {
+  display: flex;
+}
+
+.nav-bar ul li a {
+  display: block;
+  color: #fefefe;
+  font-size: 20px;
+  padding: 10px 25px;
+  border-radius: 50px;
+  transition: 0.2s;
+  margin: 0 5px;
+}
+
+.nav-bar ul li a:hover {
+  color: #11101b;
+  background: #fefefe;
+}
+
+.navbar ul li a.active {
+  color: #11101b;
+  background: #fefefe;
+}
+
+@media only screen and (max-width: 1320px) {
+  header {
+    padding: 0 50px;
+  }
+}
+@media only screen and (max-width: 1100px) {
+  header {
+    padding: 0 30px;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+  .hamburger .line {
+    width: 30px;
+    height: 3px;
+    background: #7f7e7e;
+    margin: 6px 0;
+  }
+
+  .nav-bar {
+    height: 0;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    background: #6a6a6c;
+    transition: 0.5s;
+    overflow: hidden;
+  }
+
+  .nav-bar.active {
+    height: 400px;
+  }
+
+  .nav-bar ul {
+    display: block;
+    width: fit-content;
+    margin: 80px auto 0 auto;
+    text-align: center;
+    transition: 0.5s;
+  }
+
+  .nav-bar.active ul {
+    opacity: 1;
+  }
+
+  .nav-bar ul li a {
+    margin-bottom: 12px;
+    color: #cecece;
+  }
+}
+
+/* End of header and navbar styling */
+
+/* Start of main styling*/
+main {
+  padding: 50px 0px;
+}
+
+h1 {
+  font-size: 35px;
+}
+
+.hero-text p {
+  font-size: 20px;
+}
+
+.hero-information {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding-bottom: 50px;
+}
+
+.hero-img {
+  background-image: url(images/heroPic.png);
+  width: 18rem;
+  height: 18rem;
+  border-radius: 50%;
+  border: 2px solid black;
+  margin-top: 20px;
+}
+
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.skills {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.skills p {
+  display: flex;
+  justify-content: center;
+  font-size: 25px;
+  border-bottom: 2px solid black;
+  width: 200px;
+  margin-bottom: 20px;
+}
+
+.skills-list {
+  display: flex;
+  justify-content: center;
+}
+
+.skills-list li {
+  background-color: white;
+  border-radius: 50%;
+  width: 3.5rem;
+  height: 3.5rem;
+  margin-right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.skill {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  width: 2rem;
+}
+/* End of main styling */
+
+/* Section about styling */
+
+.about .container .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 0px;
+}
+
+.side-img {
+  width: 18rem;
+  height: 13rem;
+  border-radius: 10%;
+}
+
+h2 {
+  padding: 20px 0px 5px 0px;
+  font-size: 1.3rem;
+}
+
+h3 {
+  font-size: 1.6rem;
+  padding: 0px 20px;
+}
+
+.about .container .content p {
+  padding: 20px 25px 0px 25px;
+  font-size: 1.2rem;
+}
+
+/* End of section about styling */
+
+#projects {
+  height: 50vh;
+}
+
+.project-cards {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.project {
+  background-color: #353538;
+  width: 300px;
+  height: 400px;
+  margin: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.project:hover {
+  background-color: rgb(134, 134, 134);
+  transform: scale(1.05);
+  transition: all 1s ease;
+}
+
+.project-image img {
+  width: 17rem;
+  height: auto;
+}
+
+.project:hover .project-image {
+  transform: translateY(-7px);
+  transition: 1s;
+}
+
+.projects .container .content p {
+  padding: 20px 0px;
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+h4 {
+  color: #d7d7d9;
+  font-size: 1.2em;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.projects .container .content .project-describe {
+  font-size: 0.8rem;
+  color: rgb(237, 237, 237);
+  padding: 20px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
