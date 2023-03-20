@@ -6,12 +6,16 @@
   font-family: Arial;
   box-sizing: border-box;
 }
+
 html {
   scroll-behavior: smooth;
+  --text-color: #414756;
+  --elements-color: #a5abbd;
+  --background-color: #e6f4f1;
 }
 
 body {
-  background: rgb(237, 237, 237);
+  background: var(--background-color);
 }
 
 /* Navbar styling */
@@ -19,7 +23,7 @@ body {
 nav {
   width: 100%;
   height: 80px;
-  background: #353538;
+  background: var(--background-color);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -29,7 +33,7 @@ nav {
 .logo {
   font-size: 28px;
   font-weight: bold;
-  color: #cecece;
+  color: var(--text-color);
   left: 0;
 }
 
@@ -43,7 +47,7 @@ nav {
 
 .nav-bar ul li a {
   display: block;
-  color: #fefefe;
+  color: var(--text-color);
   font-size: 20px;
   padding: 10px 25px;
   border-radius: 50px;
@@ -52,13 +56,13 @@ nav {
 }
 
 .nav-bar ul li a:hover {
-  color: #11101b;
-  background: #fefefe;
+  color: var(--text-color);
+  background: var(--elements-color);
 }
 
 .navbar ul li a.active {
-  color: #11101b;
-  background: #fefefe;
+  color: var(--text-color);
+  background: var(--elements-color);
 }
 
 @media only screen and (max-width: 1320px) {
@@ -79,7 +83,7 @@ nav {
   .hamburger .line {
     width: 30px;
     height: 3px;
-    background: #7f7e7e;
+    background: var(--text-color);
     margin: 6px 0;
   }
 
@@ -90,13 +94,13 @@ nav {
     left: 0;
     right: 0;
     width: 100vw;
-    background: #6a6a6c;
+    background: var(--background-color);
     transition: 0.5s;
     overflow: hidden;
   }
 
   .nav-bar.active {
-    height: 400px;
+    height: 430px;
   }
 
   .nav-bar ul {
@@ -113,7 +117,7 @@ nav {
 
   .nav-bar ul li a {
     margin-bottom: 12px;
-    color: #cecece;
+    color: var(--text-color);
   }
 }
 
@@ -163,10 +167,11 @@ h1 {
 }
 
 .skills p {
+  color: var(--text-color);
   display: flex;
   justify-content: center;
   font-size: 25px;
-  border-bottom: 2px solid black;
+  border-bottom: 2px solid var(--text-color);
   width: 200px;
   margin-bottom: 20px;
 }
@@ -177,7 +182,7 @@ h1 {
 }
 
 .skills-list li {
-  background-color: white;
+  background-color: var(--elements-color);
   border-radius: 50%;
   width: 3.5rem;
   height: 3.5rem;
@@ -212,8 +217,10 @@ h1 {
 }
 
 h2 {
+  color: var(--text-color);
   padding: 20px 0px 5px 0px;
   font-size: 1.3rem;
+  margin-bottom: 20px;
 }
 
 h3 {
@@ -221,7 +228,7 @@ h3 {
   padding: 0px 20px;
 }
 
-.about .container .content p {
+.about-me-describe {
   padding: 20px 25px 0px 25px;
   font-size: 1.2rem;
 }
@@ -239,7 +246,8 @@ h3 {
 }
 
 .project {
-  background-color: #353538;
+  background-color: var(--elements-color);
+  border: 1px solid var(--text-color);
   width: 300px;
   height: 370px;
   margin: 10px;
@@ -251,7 +259,7 @@ h3 {
 }
 
 .project:hover {
-  background-color: rgb(134, 134, 134);
+  background-color: var(--background-color);
   transform: scale(1.05);
   transition: all 1s ease;
 }
@@ -259,6 +267,7 @@ h3 {
 .project-image img {
   width: 17rem;
   height: auto;
+  border-radius: 2%;
 }
 
 .project:hover .project-image {
@@ -270,32 +279,76 @@ h3 {
   padding: 20px 0px;
   font-size: 1.3rem;
   font-weight: 700;
+  color: var(--text-color);
 }
 
 h4 {
-  color: #d7d7d9;
+  color: var(--text-color);
   font-size: 1.2em;
   padding-top: 20px;
   padding-bottom: 20px;
 }
 
-.projects .container .content .project-describe {
+.project-describe {
+  padding: 25px 25px;
   font-size: 1rem;
-  color: rgb(237, 237, 237);
+  color: var(--text-color);
 }
 
 /* End of section about styling */
 
+/* Section contact styling */
+
 #contact {
   height: 500px;
 }
-.contact .container .content .contact-title {
+
+.contact-title {
   padding: 20px 0px;
   font-size: 1.3rem;
   font-weight: 700;
+  color: (var(--text-color));
 }
-/* Section contact styling */
 
+.contact-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.contact-box span {
+  background-color: var(--elements-color);
+  border-radius: 50%;
+  width: 3.5rem;
+  height: 3.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-box span i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  color: var(--background-color);
+}
+
+.contact-box p {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  color: var(--text-color);
+  font-weight: 700;
+  font-size: 1.3em;
+}
+
+.contact-box a {
+  color: var(--text-color);
+}
 /*End of section contact styling */
 
 /* Footer styling */
