@@ -136,7 +136,7 @@ nav {
 }
 
 h1 {
-  font-size: 35px;
+  font-size: 39px;
 }
 
 .hero-text p {
@@ -303,11 +303,11 @@ h1 {
   }
 
   .hero-text h1 {
-    font-size: 55px;
+    font-size: 52px;
   }
 
   .hero-text p {
-    font-size: 30px;
+    font-size: 26px;
   }
 
   .hero-information {
@@ -349,7 +349,7 @@ h1 {
   }
 
   .side-img {
-    margin-left: 20px;
+    margin: 0 20px 0 20px;
   }
 
   .about-title {
@@ -504,7 +504,3 @@ h4 {
   }
 }
 /*End of section contact styling */
-
-/* Footer styling */
-
-/*End of footer styling */
