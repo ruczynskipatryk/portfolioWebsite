@@ -100,7 +100,9 @@ nav {
   }
 
   .nav-bar.active {
-    height: 430px;
+    height: 500px;
+    z-index: 10;
+    transition: 2s;
   }
 
   .nav-bar ul {
@@ -144,13 +146,96 @@ h1 {
   padding-bottom: 50px;
 }
 
-.hero-img {
-  background-image: url(images/heroPic.png);
-  width: 18rem;
-  height: 18rem;
-  border-radius: 50%;
-  border: 2px solid black;
+.box {
   margin-top: 20px;
+  position: relative;
+  width: 350px;
+  height: 350px;
+  background: var(--text-color);
+  border-radius: 50%;
+  overflow: hidden;
+}
+.box::before {
+  content: '';
+  position: absolute;
+  inset: -10px 140px;
+  background: linear-gradient(315deg, #224bb1, #b6c3e4);
+  transition: 0.7s;
+  animation: animate 5s linear infinite;
+}
+.box:hover::before {
+  inset: -20px 0px;
+}
+@keyframes animate {
+  0% {
+    transform: rotate(0deg);
+  }
+  0% {
+    transform: rotate(360deg);
+  }
+}
+.box::after {
+  content: '';
+  position: absolute;
+  inset: 6px;
+  background: var(--elements-color);
+  border-radius: 50%;
+  z-index: 1;
+}
+.box .content {
+  position: absolute;
+  inset: 30px;
+  border: 6px solid var(--text-color);
+  z-index: 3;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.box .content h2 {
+  position: relative;
+  font-size: 1.2em;
+  text-align: center;
+  color: var(--background-color);
+  font-weight: 600;
+  letter-spacing: 0.1em;
+}
+.box .content h2 span {
+  font-weight: 200;
+  font-size: 0.8em;
+}
+.content a {
+  position: relative;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background: var(--background-color);
+  color: var(--text-color);
+  border-radius: 25px;
+  font-weight: 800;
+  font-size: 1em;
+  letter-spacing: 0.1em;
+  text-decoration: none;
+  transition: 0.5s;
+}
+.box .content a:hover {
+  letter-spacing: 0.2em;
+  transition: 0.7s;
+}
+.box .content img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.5s;
+  pointer-events: none;
+  z-index: 3;
+}
+.box:hover .content img {
+  opacity: 0;
 }
 
 .hero-text {
@@ -216,7 +301,7 @@ h1 {
   border-radius: 10%;
 }
 
-h2 {
+.about-title {
   color: var(--text-color);
   padding: 20px 0px 5px 0px;
   font-size: 1.3rem;
