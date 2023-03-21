@@ -303,14 +303,8 @@ h1 {
 
 .about-title {
   color: var(--text-color);
-  padding: 20px 0px 5px 0px;
+  padding: 20px 0px 0px 0px;
   font-size: 1.3rem;
-  margin-bottom: 20px;
-}
-
-h3 {
-  font-size: 1.6rem;
-  padding: 0px 20px;
 }
 
 .about-me-describe {
