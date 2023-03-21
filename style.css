@@ -10,7 +10,7 @@
 html {
   scroll-behavior: smooth;
   --text-color: #414756;
-  --elements-color: #a5abbd;
+  --elements-color: #999fac;
   --background-color: #e6f4f1;
 }
 
@@ -27,10 +27,10 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 100px;
+  padding: 0 50px;
 }
 
-.logo {
+.logo a {
   font-size: 28px;
   font-weight: bold;
   color: var(--text-color);
@@ -126,8 +126,13 @@ nav {
 /* End of header and navbar styling */
 
 /* Start of main styling*/
-main {
-  padding: 50px 0px;
+
+#home .container {
+  padding: 50px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 h1 {
@@ -136,6 +141,7 @@ h1 {
 
 .hero-text p {
   font-size: 20px;
+  margin-bottom: 10px;
 }
 
 .hero-information {
@@ -257,7 +263,7 @@ h1 {
   justify-content: center;
   font-size: 25px;
   border-bottom: 2px solid var(--text-color);
-  width: 200px;
+  width: 300px;
   margin-bottom: 20px;
 }
 
@@ -284,6 +290,30 @@ h1 {
   height: auto;
   width: 2rem;
 }
+
+@media only screen and (min-width: 900px) {
+  #home .container {
+    display: grid;
+  }
+
+  #home .container .hero-text {
+    grid-column: 1 / 6;
+    align-self: center;
+    justify-self: center;
+  }
+
+  .hero-text h1 {
+    font-size: 55px;
+  }
+
+  .hero-text p {
+    font-size: 30px;
+  }
+
+  .hero-information {
+    margin-right: 200px;
+  }
+}
 /* End of main styling */
 
 /* Section about styling */
@@ -305,11 +335,27 @@ h1 {
   color: var(--text-color);
   padding: 20px 0px 0px 0px;
   font-size: 1.3rem;
+  margin-bottom: 20px;
 }
 
 .about-me-describe {
   padding: 20px 25px 0px 25px;
   font-size: 1.2rem;
+}
+
+@media only screen and (min-width: 900px) {
+  #about .container .content {
+    display: grid;
+  }
+
+  .side-img {
+    margin-left: 20px;
+  }
+
+  .about-title {
+    grid-column: 1 / 6;
+    justify-self: center;
+  }
 }
 
 /* End of section about styling */
@@ -322,6 +368,7 @@ h1 {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  align-items: center;
 }
 
 .project {
@@ -359,6 +406,8 @@ h1 {
   font-size: 1.3rem;
   font-weight: 700;
   color: var(--text-color);
+  display: flex;
+  justify-content: center;
 }
 
 h4 {
@@ -374,6 +423,19 @@ h4 {
   color: var(--text-color);
 }
 
+@media only screen and (min-width: 1000px) {
+  .project-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #projects {
+    height: 500px;
+  }
+}
+
 /* End of section about styling */
 
 /* Section contact styling */
@@ -384,9 +446,11 @@ h4 {
 
 .contact-title {
   padding: 20px 0px;
-  font-size: 1.3rem;
+  font-size: 1.7rem;
   font-weight: 700;
   color: (var(--text-color));
+  display: flex;
+  justify-content: center;
 }
 
 .contact-box {
@@ -427,6 +491,17 @@ h4 {
 
 .contact-box a {
   color: var(--text-color);
+}
+
+@media only screen and (min-width: 700px) {
+  .contact .container .content {
+    display: grid;
+    justify-content: center;
+  }
+
+  .contact-title {
+    grid-column: 1 / 6;
+  }
 }
 /*End of section contact styling */
 

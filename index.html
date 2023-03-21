@@ -4,19 +4,19 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ruczyński Dev Portfolio Website</title>
+    <title>Ruczyński Frontend Developer - Portfolio Website</title>
     <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
-    crossorigin="anonymous"
-    referrerpolicy="no-referrer"
-  />
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" type="text/css" href="style.css" />
   </head>
   <body>
     <nav class="nav">
-      <div class="logo">.dev</div>
+      <div class="logo"><a href="#home">ruczynski.dev</a></div>
       <div class="hamburger">
         <div class="line"></div>
         <div class="line"></div>
@@ -41,21 +41,21 @@
     </nav>
     <main id="home" class="hero">
       <div class="container">
+        <div class="hero-text">
+          <h1>Ruczyński Patryk</h1>
+          <p>I'm <span class="pinput"></span></p>
+        </div>
         <div class="hero-information">
-          <div class="hero-text">
-            <h1>Ruczyński Patryk</h1>
-            <p>I'm <span class="pinput"></span></p>
-          </div>
           <div class="box">
             <div class="content">
-              <img src="/images/heroPic.png">
-              <h2>Patryk Ruczyński<br><span>Frontend Developer</span></h2>  
+              <img src="/images/heroPic.png" />
+              <h2>Patryk Ruczyński<br /><span>Frontend Developer</span></h2>
               <a href="#contact">Contact with me</a>
             </div>
           </div>
         </div>
         <div class="skills">
-          <p>My Tech Stack</p>
+          <p>My Current Tech Stack</p>
           <ul class="skills-list">
             <li>
               <img
@@ -87,23 +87,25 @@
     <section id="about" class="about">
       <div class="container">
         <div class="content">
+          <h3 class="about-title">ABOUT ME</h3>
           <img
             class="side-img"
             src="/images/laptop-photo.jpg"
             tittle="Laptop picture"
             alt="Picture of the laptop on the table."
           />
-          <h3 class="about-title">ABOUT ME</h3>
           <p class="about-me-describe">
-            I live in Elbląg, Poland. I love to develop myself that's why I'm programing. I don't like to
-            stand still, I love development - that's exactly what programming
-            and learning about new technologies give me. That's why I started
-            studying in this field, while also combining it with my passion,
-            which is working as a personal trainer. I love what I do, which
-            makes me more productive and efficient at work.
+            I live in Elbląg, Poland. I love to develop myself that's why I'm
+            programing. I don't like to stand still, I love development - that's
+            exactly what programming and learning about new technologies give
+            me. That's why I started studying in this field, while also
+            combining it with my passion, which is working as a personal
+            trainer. I love what I do, which makes me more productive and
+            efficient at work.
           </p>
         </div>
       </div>
+    </section>
     <section id="projects" class="projects">
       <div class="container">
         <div class="content">
@@ -112,25 +114,43 @@
             <div class="project">
               <h4>Personal Trainer Website 💪🏼</h4>
               <div class="project-image">
-                <img src="/images/ruczynski.png" alt="Screen strony ruczynskipatryk.pl">
+                <img
+                  src="/images/ruczynski.png"
+                  alt="Screen strony ruczynskipatryk.pl"
+                />
               </div>
-              <p class="project-describe"> Personal trainer website. I made this website for me for my usage. I've made this page using wordpress. </p>
+              <p class="project-describe">
+                Personal trainer website. I made this website for me for my
+                usage. I've made this page using wordpress.
+              </p>
             </div>
             <div class="project">
               <h4>Mini Darcy Website 🚜</h4>
               <div class="project-image">
-                <img src="/images/argon.png" alt="Screen strony minikoparka-argon.pl">
+                <img
+                  src="/images/argon.png"
+                  alt="Screen strony minikoparka-argon.pl"
+                />
               </div>
-              <p class="project-describe">WebPage made for my client, whos running the business with mini excavator. </p>
+              <p class="project-describe">
+                WebPage made for my client, whos running the business with mini
+                excavator.
+              </p>
             </div>
             <div class="project">
               <h4>Health project / challange 📅</h4>
               <div class="project-image">
-                <img src="/images/zmianana100.png" alt="Screen strony zmianana100.pl">
+                <img
+                  src="/images/zmianana100.png"
+                  alt="Screen strony zmianana100.pl"
+                />
               </div>
-              <p class="project-describe">My personal health project, actually It's a challange. You can find more informations on the website. </p>
+              <p class="project-describe">
+                My personal health project, actually It's a challange. You can
+                find more informations on the website.
+              </p>
             </div>
-          </div>  
+          </div>
         </div>
       </div>
     </section>
@@ -142,29 +162,41 @@
             <span><i class="fa-sharp fa-regular fa-envelope"></i></span>
             <div classs="contact-information">
               <p>Mail</p>
-              <a href="mailto:ruczynskipatryk22@gmail.com">ruczynskipatryk22@gmail.com</a>
+              <a href="mailto:ruczynskipatryk22@gmail.com"
+                >ruczynskipatryk22@gmail.com</a
+              >
             </div>
           </div>
+          <div class="contact-box">
+            <span><i class="fa-solid fa-phone"></i></span>
+            <div classs="contact-information">
+              <p>Phone</p>
+              <a href="tel:792-766-702">792-766-702</a>
+            </div>
+          </div>
+          <p class="contact-title">Socials</p>
           <div class="contact-box">
             <span><i class="fa-brands fa-linkedin-in"></i></span>
             <div classs="contact-information">
               <p>Linkedin</p>
-              <a href="https://www.linkedin.com/in/patryk-ruczyński-4ab5b6219/">Linkedin Ruczyński Patryk</a>
+              <a href="https://www.linkedin.com/in/patryk-ruczyński-4ab5b6219/"
+                >Linkedin Ruczyński Patryk</a
+              >
             </div>
           </div>
           <div class="contact-box">
             <span><i class="fa-brands fa-github"></i></span>
             <div classs="contact-information">
               <p>Github</p>
-              <a href="https://github.com/ruczynskipatryk">Github Ruczyński Patryk</a>
+              <a href="https://github.com/ruczynskipatryk"
+                >Github Ruczyński Patryk</a
+              >
             </div>
           </div>
         </div>
       </div>
     </section>
-    <footer class="footer">
-
-    </footer>
+    <footer class="footer"></footer>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="app.js"></script>
   </body>

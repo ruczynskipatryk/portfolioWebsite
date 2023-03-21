@@ -7,7 +7,7 @@ hamburger.onclick = function () {
   navBar.classList.toggle('active');
 };
 
-// Script for h3
+// Script for hero typing text
 const typed = new Typed('.pinput', {
   strings: ['Frontend Developer', 'Freelancer', 'Programist in Your Company'],
   typeSpeed: 220,
