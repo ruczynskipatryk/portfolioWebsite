@@ -9,6 +9,7 @@
 
 html {
   scroll-behavior: smooth;
+  transition: 5s;
   --text-color: #414756;
   --elements-color: #999fac;
   --background-color: #eceef9;
@@ -150,6 +151,7 @@ h1 {
   align-items: center;
   justify-content: space-around;
   padding-bottom: 50px;
+  z-index: 10;
 }
 
 .box {
@@ -160,6 +162,7 @@ h1 {
   background: var(--text-color);
   border-radius: 50%;
   overflow: hidden;
+  z-index: 5;
 }
 .box::before {
   content: '';
