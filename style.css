@@ -11,7 +11,7 @@ html {
   scroll-behavior: smooth;
   --text-color: #414756;
   --elements-color: #999fac;
-  --background-color: #e6f4f1;
+  --background-color: #eceef9;
 }
 
 body {
@@ -100,7 +100,7 @@ nav {
   }
 
   .nav-bar.active {
-    height: 500px;
+    height: 520px;
     z-index: 10;
     transition: 2s;
   }
@@ -170,7 +170,7 @@ h1 {
   animation: animate 5s linear infinite;
 }
 .box:hover::before {
-  inset: -20px 0px;
+  inset: -50px 0px;
 }
 @keyframes animate {
   0% {
