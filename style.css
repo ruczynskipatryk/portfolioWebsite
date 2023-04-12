@@ -102,7 +102,7 @@ nav {
 
   .nav-bar.active {
     height: 520px;
-    z-index: 10;
+    z-index: 11;
     transition: 2s;
   }
 
