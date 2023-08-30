@@ -17,18 +17,23 @@ const typed = new Typed('.pinput', {
 
 // Redirecting to projects
 
-const redirect1 = document.querySelector('#trainer');
-const redirect2 = document.querySelector('#darcy');
-const redirect3 = document.querySelector('#challange');
+const redirect1 = document.querySelector('#backend');
+const redirect2 = document.querySelector('#trainer');
+const redirect3 = document.querySelector('#darcy');
+const redirect4 = document.querySelector('#challange');
 
 redirect1.addEventListener('click', () => {
-  window.location.href = 'https://ruczynskipatryk.pl';
+  window.location.href = 'https://github.com/ruczynskipatryk';
 });
 
 redirect2.addEventListener('click', () => {
-  window.location.href = 'https://minikoparka-argon.pl';
+  window.location.href = 'https://ruczynskipatryk.pl';
 });
 
 redirect3.addEventListener('click', () => {
+  window.location.href = 'https://minikoparka-argon.pl';
+});
+
+redirect4.addEventListener('click', () => {
   window.location.href = 'https://zmianana100.pl';
 });
